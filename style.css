@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("noite estrelada 02.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f5e9c8; /* tom dourado claro */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 650px;
+  margin: 50px auto;
+  background: rgba(10, 10, 30, 0.85); /* azul escuro translúcido */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.7);
+  backdrop-filter: blur(6px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffd700; /* dourado */
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-form input, .task-form select {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #1c1c3c;
+  color: #f5e9c8;
+}
+
+.task-form button {
+  padding: 10px 20px;
+  background: #ffd700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.task-form button:hover {
+  background: #e6c200;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters select {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #1c1c3c;
+  color: #f5e9c8;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: rgba(30, 30, 60, 0.85);
+  margin: 6px 0;
+  padding: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+li.completed {
+  text-decoration: line-through;
+  background: rgba(60, 60, 90, 0.7);
+  opacity: 0.7;
+}
+
+li span {
+  flex: 1;
+  color: #f5e9c8;
+}
+
+li button {
+  margin-left: 6px;
+  background: #e63946;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+li button:hover {
+  background: #b71c1c;
+}
+
+.stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .task-form, .filters {
+    flex-direction: column;
+  }
+}
+
+body {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+              url("noite estrelada 02.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Improved font styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+}
+
+.task-form button, .filters select, .stats p {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
